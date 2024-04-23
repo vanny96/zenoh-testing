@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  zenoh:
+    image: eclipse/zenoh
+    command:
+      - --config=/root/.zenoh/config.json5
+    ports:
+      - 7447:7447
+      - 8000:8000
+    volumes:
+      - ./zenoh_docker:/root/.zenoh

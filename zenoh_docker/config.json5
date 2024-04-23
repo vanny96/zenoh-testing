@@ -1,0 +1,15 @@
+{
+  plugins: {
+    rest: {
+      http_port: 8000
+    },
+    storage_manager: {
+      storages: {
+        "test_counter": {
+          key_expr: "test/counter/**",
+          volume: "memory",
+        }
+      }
+    }
+  },
+}
